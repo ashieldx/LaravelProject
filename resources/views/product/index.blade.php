@@ -29,7 +29,7 @@
                 <div class="col-md-3 mt-3"> 
                     <div class="card text-center" style ="box-shadow:0 5px 10px rgb(0 0 0/0.2)">
                         <div style ="width:100%;height:100%;text-align:center;">
-                            <img src="{{ asset('storage/images/' . $product->image )}}" width = 70% height = 50%  href ="{{ route('products.show', $product->id) }}"></img>
+                            <img src="{{ asset('storage/images/'. $product->image )}}" width = 70% height = 50%  href ="{{ route('products.show', $product->id) }}"></img>
                         </div>
                         <a class="card-body stretched-link" href = "{{ route('products.show', $product->id) }}" style ="text-decoration:none;transform: rotate(0);">
                             <h6 class = "card-title"> {{ $product->name }} </h6>
